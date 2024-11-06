@@ -1,0 +1,38 @@
+/* Center the grid on the page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #aca6a6;
+  margin: 0;
+  overflow: hidden; /* Ensure messages are visible even if they overflow */
+  position: relative;
+}
+
+/* Style each message */
+.message {
+  position: absolute;
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Style the start button */
+.start-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border: none;
+  border-radius: 15%; /* Make the button circular */
+  z-index: 1; /* Ensure the button is above the messages */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
